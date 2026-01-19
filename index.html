@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam Kaundilya - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px 50px;
+        }
+
+        .header {
+            margin-bottom: 10px;
+        }
+
+        .name-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .left-section h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            color: #000;
+        }
+
+        .left-section h2 {
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .right-section {
+            text-align: right;
+            font-size: 11px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 4px;
+            margin-bottom: 3px;
+        }
+
+        .contact-row svg {
+            width: 11px;
+            height: 11px;
+            fill: #333;
+        }
+
+        .divider {
+            height: 2px;
+            background: #000;
+            margin: 15px 0 20px 0;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-text {
+            font-size: 11px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .job-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .company-name {
+            font-size: 11px;
+            font-weight: 600;
+            color: #333;
+            font-style: italic;
+        }
+
+        .date-location {
+            font-size: 10px;
+            color: #666;
+        }
+
+        .responsibilities, .project-details {
+            margin-top: 6px;
+        }
+
+        .responsibilities li, .project-details li {
+            font-size: 11px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 4px;
+            margin-left: 18px;
+        }
+
+        .skills-container {
+            font-size: 11px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .skill-item {
+            margin-bottom: 5px;
+        }
+
+        .skill-item strong {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .additional-info {
+            font-size: 11px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .additional-info p {
+            margin-bottom: 5px;
+        }
+
+        .additional-info strong {
+            color: #000;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <div class="name-title">
+                <div class="left-section">
+                    <h1>GAUTAM KAUNDILYA</h1>
+                    <h2>Software Developer</h2>
+                </div>
+                <div class="right-section">
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        +91 7700891004
+                        <span style="margin: 0 8px;">|</span>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                        gautam-kaundilya
+                    </div>
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        gautamkaundilya11may@gmail.com
+                        <span style="margin: 0 8px;">|</span>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        Patna, India
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="section-title">SUMMARY</div>
+            <p class="summary-text">
+                Results-driven Software Developer with hands-on experience in frontend development and modern web technologies. Skilled in building responsive, user-friendly interfaces, writing clean and maintainable code, and collaborating with cross-functional teams to deliver impactful digital solutions. Passionate about performance optimization, UI/UX best practices, and continuous learning.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EXPERIENCE</div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="job-title">Frontend Developer</div>
+                        <div class="company-name">DATAKYND</div>
+                    </div>
+                    <div class="date-location">Apr 2025 – Present | Remote</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Developing responsive and interactive web interfaces using React and modern JavaScript.</li>
+                    <li>Building reusable UI components to improve development efficiency and maintain consistency.</li>
+                    <li>Collaborating with designers and backend teams to integrate APIs and deliver seamless user experiences.</li>
+                    <li>Optimizing application performance and ensuring cross-browser compatibility.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="job-title">Intern</div>
+                        <div class="company-name">High Radius</div>
+                    </div>
+                    <div class="date-location">Feb 2022 – Jun 2022 | Bhubaneswar, India</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Provided weekly detailed project reports to keep stakeholders informed about progress and milestones.</li>
+                    <li>Assisted developers in designing algorithms and flowcharts for application workflows.</li>
+                    <li>Gained hands-on exposure to software development lifecycle and team-based development.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="job-title">B.Tech in Civil Engineering</div>
+                        <div class="company-name">Kalinga Institute of Industrial Technology, Bhubaneswar</div>
+                    </div>
+                    <div class="date-location">Aug 2019 – May 2023</div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="job-title">XII (Senior Secondary)</div>
+                        <div class="company-name">Yashoda U.M.V., Chhotiki Nawada — BBOSE Board</div>
+                    </div>
+                    <div class="date-location">Apr 2016 – Mar 2018</div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="job-title">X (Secondary)</div>
+                        <div class="company-name">Gyan Niketan — CBSE Board</div>
+                    </div>
+                    <div class="date-location">Apr 2015 – Mar 2016</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SKILLS</div>
+            <div class="skills-container">
+                <div class="skill-item"><strong>Languages:</strong> JavaScript, C, C++</div>
+                <div class="skill-item"><strong>Frontend:</strong> HTML, CSS, React, React Native</div>
+                <div class="skill-item"><strong>Backend & DB:</strong> Node.js, MongoDB, SQL</div>
+                <div class="skill-item"><strong>Core CS:</strong> Data Structures</div>
+                <div class="skill-item"><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Postman, Netlify, npm, Chrome DevTools</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">PROJECTS</div>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="job-title">Responsive Landing Page – AirPods</div>
+                </div>
+                <ul class="project-details">
+                    <li>Designed the landing page using HTML5 semantic structure and CSS3 with Flexbox and Grid for layout alignment.</li>
+                    <li>Implemented responsive breakpoints, media queries, and scalable images to ensure smooth adaptability across devices.</li>
+                    <li>Added UI/UX features such as smooth scrolling, hover effects, section-based layout, and clean typography for a modern product-focused design.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="job-title">Parallax Scrolling</div>
+                </div>
+                <ul class="project-details">
+                    <li>Created dynamic, layered web pages with smooth parallax scrolling effects to enhance user engagement.</li>
+                    <li>Implemented modern CSS and JavaScript techniques to achieve visually appealing animations.</li>
+                    <li>Improved overall user experience through optimized scrolling performance and responsive layouts.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="job-title">Animated Slider Navigation</div>
+                </div>
+                <ul class="project-details">
+                    <li>Built an animated slider navigation system with smooth transitions and interactive elements.</li>
+                    <li>Designed intuitive navigation flows to improve usability and user retention.</li>
+                    <li>Used JavaScript and CSS animations to deliver a modern and engaging UI experience.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="job-title">Tech Insights</div>
+                </div>
+                <ul class="project-details">
+                    <li>Developed an interactive web platform to showcase the latest technology trends and data-driven insights.</li>
+                    <li>Designed responsive layouts ensuring compatibility across devices and screen sizes.</li>
+                    <li>Focused on clean UI design and structured content presentation for better readability.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">ADDITIONAL INFORMATION</div>
+            <div class="additional-info">
+                <p><strong>Languages:</strong> English, Hindi</p>
+                <p><strong>Coding Competition:</strong> Secured 3rd Prize in College-Level Coding Competition for problem-solving and algorithmic skills.</p>
+                <p><strong>Strengths:</strong> Problem Solving, Clean Code Practices, Team Collaboration</p>
+                <p><strong>Interests:</strong> Web Technologies, UI/UX Design, Performance Optimization, Competitive Coding</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
